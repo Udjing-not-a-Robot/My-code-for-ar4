@@ -1,0 +1,16 @@
+
+int led=9;//led pin
+
+void setup() {
+pinMode(led,OUTPUT);
+
+}
+
+
+
+void loop() {
+digitalWrite(led,1);//5v on led pin
+delay(100);//delay in microsec
+digitalWrite(led,0);//0v on led pin
+delay(100);//delay in microsec
+}
