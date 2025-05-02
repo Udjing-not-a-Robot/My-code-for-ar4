@@ -1,0 +1,17 @@
+int pinButton=10;//Button pin
+int pinLed=9;//led pin
+
+void setup() {
+  // put your setup code here, to run once:
+pinMode(pinButton,INPUT_PULLUP);
+pinMode(pinLed,OUTPUT);
+Serial.begin(9600);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+int Button=!digitalRead(pinButton);
+digitalWrite(pinLed,Button);
+Serial.println(Button);
+delay(100);
+}
